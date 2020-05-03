@@ -6,7 +6,7 @@ import { normalizePath } from "../utils/get-url-path"
 export default () => {
   const { wpMenu } = useStaticQuery(graphql`
     {
-      wpMenu(slug: { eq: "main-menu" }) {
+      wpMenu(slug: { eq: "Primary" }) {
         name
         menuItems {
           nodes {
